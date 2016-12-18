@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="engine.core" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/engine.core" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="C:/Program Files (x86)/CodeBlocks/MinGW/lib/engine.core" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine.core" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include/ode" />
+		</ResourceCompiler>
+		<Linker>
+			<Add library="glew32" />
+			<Add library="glfw3" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="glu32" />
+			<Add library="mingw32" />
+			<Add library="ode" />
+		</Linker>
+		<Unit filename="assetlibrary/assetlibrary.cpp" />
+		<Unit filename="assetlibrary/assetlibrary.h" />
+		<Unit filename="assetlibrary/dll.h" />
+		<Unit filename="core/double2.cpp" />
+		<Unit filename="core/double2.h" />
+		<Unit filename="core/double3.cpp" />
+		<Unit filename="core/double3.h" />
+		<Unit filename="core/enginecontrol.cpp" />
+		<Unit filename="core/enginecontrol.h" />
+		<Unit filename="core/float3x3.cpp" />
+		<Unit filename="core/float3x3.h" />
+		<Unit filename="core/int2.h" />
+		<Unit filename="core/list.h" />
+		<Unit filename="core/map.h" />
+		<Unit filename="core/node.cpp" />
+		<Unit filename="core/node.h" />
+		<Unit filename="core/nodemessage.cpp" />
+		<Unit filename="core/nodemessage.h" />
+		<Unit filename="core/noderequest.h" />
+		<Unit filename="core/stringutil.cpp" />
+		<Unit filename="core/stringutil.h" />
+		<Unit filename="core/timer.cpp" />
+		<Unit filename="core/timer.h" />
+		<Unit filename="core/varmap.cpp" />
+		<Unit filename="core/varmap.h" />
+		<Unit filename="engine.cpp" />
+		<Unit filename="engine.h" />
+		<Unit filename="graphics/camera.cpp" />
+		<Unit filename="graphics/camera.h" />
+		<Unit filename="graphics/glstructs.cpp" />
+		<Unit filename="graphics/glstructs.h" />
+		<Unit filename="graphics/shader.cpp" />
+		<Unit filename="graphics/shader.h" />
+		<Unit filename="graphics/view.cpp" />
+		<Unit filename="graphics/view.h" />
+		<Unit filename="graphics/window.cpp" />
+		<Unit filename="graphics/window.h" />
+		<Unit filename="physics/collision.cpp" />
+		<Unit filename="physics/collision.h" />
+		<Unit filename="physics/impact.cpp" />
+		<Unit filename="physics/impact.h" />
+		<Unit filename="physics/ode.cpp" />
+		<Unit filename="physics/ode.h" />
+		<Unit filename="physics/ode_utils.cpp" />
+		<Unit filename="physics/ode_utils.h" />
+		<Unit filename="physics/physical.cpp" />
+		<Unit filename="physics/physical.h" />
+		<Unit filename="physics/physical_single_body.cpp" />
+		<Unit filename="physics/physical_single_body.h" />
+		<Unit filename="physics/physics_world.cpp" />
+		<Unit filename="physics/physics_world.h" />
+		<Unit filename="physics/physicsgroup.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
