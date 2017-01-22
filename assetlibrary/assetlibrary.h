@@ -5,10 +5,10 @@
 #include <fstream>
 #include <streambuf>
 
-#include <engine/core/varmap.h>
-#include <engine/core/stringutil.h>
-#include <engine/core/map.h>
-#include <engine/assetlibrary/dll.h>
+#include "../core/varmap.h"
+#include "../core/stringutil.h"
+#include "../core/map.h"
+#include "../assetlibrary/dll.h"
 
 class AssetLibrary{
 private:
@@ -50,7 +50,7 @@ public:
         if(fileName.substr(fileName.length()-type.length()-4) != type+".dll"){
             funcName += stringToUpperCaseFirst(type.substr(type.find('.')+1));
         }
-
+        //cout << "loaded dll : " << fileName << " \n\t- with func call " << funcName << endl;
         T object = GetDllValue<T>(dll,funcName.c_str());
         return object;
     }

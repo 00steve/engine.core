@@ -7,29 +7,29 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/engine.core" prefix_auto="1" extension_auto="1" />
+				<Option output="C:/Program Files (x86)/CodeBlocks/MinGW/lib/engine" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="obj/Debug/" />
+				<Option object_output="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-Wall" />
-					<Add option="-std=c++11" />
+					<Add option="-std=c++0x" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="C:/Program Files (x86)/CodeBlocks/MinGW/lib/engine.core" prefix_auto="1" extension_auto="1" />
+				<Option output="C:/Program Files (x86)/CodeBlocks/MinGW/lib/engine" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine.core" />
+				<Option object_output="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-Wall" />
-					<Add option="-std=c++11" />
+					<Add option="-std=c++0x" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -37,19 +37,19 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-std=c++11" />
+			<Add option="-std=c++0x" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include/ode" />
 		</ResourceCompiler>
 		<Linker>
-			<Add library="glew32" />
 			<Add library="glfw3" />
 			<Add library="opengl32" />
 			<Add library="gdi32" />
 			<Add library="glu32" />
 			<Add library="mingw32" />
 			<Add library="ode" />
+			<Add library="glext" />
 		</Linker>
 		<Unit filename="assetlibrary/assetlibrary.cpp" />
 		<Unit filename="assetlibrary/assetlibrary.h" />
@@ -58,6 +58,7 @@
 		<Unit filename="core/double2.h" />
 		<Unit filename="core/double3.cpp" />
 		<Unit filename="core/double3.h" />
+		<Unit filename="core/double4x4.h" />
 		<Unit filename="core/enginecontrol.cpp" />
 		<Unit filename="core/enginecontrol.h" />
 		<Unit filename="core/float3x3.cpp" />
@@ -70,6 +71,8 @@
 		<Unit filename="core/nodemessage.cpp" />
 		<Unit filename="core/nodemessage.h" />
 		<Unit filename="core/noderequest.h" />
+		<Unit filename="core/quaternion.cpp" />
+		<Unit filename="core/quaternion.h" />
 		<Unit filename="core/stringutil.cpp" />
 		<Unit filename="core/stringutil.h" />
 		<Unit filename="core/timer.cpp" />

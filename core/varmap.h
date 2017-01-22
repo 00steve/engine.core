@@ -5,9 +5,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <engine/core/list.h>
-#include <engine/core/map.h>
-#include <engine/core/stringutil.h>
+#include "../core/list.h"
+#include "../core/map.h"
+#include "../core/stringutil.h"
 
 /*the settings class stores any settings that can be configured in the engine.*/
 //using namespace std;

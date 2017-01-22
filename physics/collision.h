@@ -3,7 +3,7 @@
 
 #define dSINGLE
 #include <ode/ode.h>
-#include <engine/core/double3.h>
+#include "../core/double3.h"
 
 class Physical;
 

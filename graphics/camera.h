@@ -1,7 +1,7 @@
 #ifndef ENGINE_CAMERA_H
 #define ENGINE_CAMERA_H
 
-#include <engine/core/node.h>
+#include "../core/node.h"
 
 class Camera : public Node{
 private:
@@ -18,6 +18,7 @@ public:
     ~Camera();
 
     virtual bool TranslateView();
+    virtual float* TranslationMatrix();
 
     bool Init();
 

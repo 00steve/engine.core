@@ -1,5 +1,5 @@
 #include "node.h"
-#include <engine/assetlibrary/assetlibrary.h>
+#include "../assetlibrary/assetlibrary.h"
 
 
 
@@ -88,10 +88,10 @@ void Node::OnGlobalRequest(Node* globalNodeRef,string name){
 
 
 bool Node::GlobalRequest(string name){
-    cout << " - request resource " << name << endl;
+    //cout << " - request resource " << name << endl;
     Node* request = Global(name);
     if(request){
-        cout << "   > already loaded, being returned\n";
+        //cout << "   > already loaded, being returned\n";
         OnGlobalRequest(request,name);
         return true;
     }
@@ -349,6 +349,7 @@ Node* Node::Load(string settingsName,VarMap settings){
     int firstP = static_cast<int>(type.find('.'));
     bool sub = firstP != -1;
     string fileName = "extensions/engine." + (sub ? type.substr(0,firstP) : settingsName + "." + settings.get<string>("type")) + ".dll";
+    //cout << "Load filename : " << fileName << endl;
     Node* newNode = AssetLibrary::Load<Node*>(fileName,settings);
     if(!newNode) return NULL;
 	newNode->GlobalsRef(Node::GlobalsRef());

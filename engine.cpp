@@ -24,7 +24,7 @@ that wants to reference it.*/
 bool Engine::Init(){
     //set this node's time step reference
     TimeStepRef(timer.TimeStepRef());
-    cout << "Engien::TimeStep = " << TimeStepRef() << endl;
+    //cout << "Engien::TimeStep = " << TimeStepRef() << endl;
     //load asset library
 
 	//load default settings
@@ -54,13 +54,6 @@ bool Engine::Init(){
     if(windows.GetCount() == 0){
         cout << "engine can't continue initialization without a window\n";
         return false;
-    }
-
-
-    GLenum err = glewInit();
-    if (GLEW_OK != err){
-        cout << "FAILED TO LOAD GLEW\n";
-        cout << glewGetErrorString(err);
     }
 
     //load any cameras

@@ -51,6 +51,9 @@ void Window::SetupOpenGL(){
 
 
 void Window::SetupWindow(){
+
+
+
     if(windowHandle){
         //do something to kill the window context
         //build list of views that window contains and make them
@@ -67,6 +70,24 @@ void Window::SetupWindow(){
     glfwSetFramebufferSizeCallback(windowHandle, framebuffer_size_callback);
     glfwSetWindowSizeCallback(windowHandle, window_size_callback);
     glfwSetWindowCloseCallback(windowHandle, window_close_callback);
+
+    /*
+    gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
+    if (GLAD_GL_VERSION_4_0){
+        cout << " - using glad with GL 4.0 to load extensions\n";
+        // Call OpenGL 3.2+ specific code
+    } else if(GLAD_GL_VERSION_3_2){
+        cout << " - using glad with GL 3.2 to load extensions\n";
+    } else {
+        cout << " - don't know which version of glad is being used to load extensions\n";
+    }*/
+    /*
+    int loaded = ogl_LoadFunctions();
+    if(loaded == ogl_LOAD_FAILED) {
+      cout << "FAILED to load ogl functions\n";
+      return;
+    }*/
+
     RegisterGlobal(this,Settings().Name());
 }
 

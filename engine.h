@@ -1,12 +1,14 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#include <GL/glew.h>
 #define GLFW_INCLUDE_GLU
+#define GLFW_INCLUDE_GLCOREARB
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
-#include <engine/core/node.h>
-#include <engine/core/enginecontrol.h>
-#include <engine/graphics/window.h>
+
+#include "core/node.h"
+#include "core/enginecontrol.h"
+#include "graphics/window.h"
 
 /**\brief This is the class that you add to your main() function. It is the engine.
 

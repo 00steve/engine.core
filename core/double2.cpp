@@ -27,6 +27,7 @@ double2 double2::operator -= (const double2 &f){x -= f.x;y -= f.y;return *this;}
 double2 double2::operator *= (const double &f){x *= f;y *= f;return *this;}
 
 /*simple arithmatic operators*/
+double2 double2::operator / (const double2 &i){return double2(x/i.x,y/i.y);}
 double2 double2::operator + (const double2 &i){return double2(x+i.x,y+i.y);}
 double2 double2::operator - (const double2 &i){return double2(x-i.x,y-i.y);}
 

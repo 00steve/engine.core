@@ -1,11 +1,16 @@
 #ifndef ENGINE_VIEW_H
 #define ENGINE_VIEW_H
 
+#include <GL/gl.h>
+#define GLFW_INCLUDE_GLU
+#define GLFW_INCLUDE_GLCOREARB
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
-#include <engine/core/node.h>
-#include <engine/core/int2.h>
-#include <engine/core/double2.h>
-//#include <GL/glu.h>
+
+#include "../core/node.h"
+#include "../core/int2.h"
+#include "../core/double2.h"
+#include "../graphics/shader.h"
 
 #define VIEW_SIZEBY_PIXEL 0
 #define VIEW_SIZEBY_SCALE 1

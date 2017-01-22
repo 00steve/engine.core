@@ -184,4 +184,3 @@ void View::RecalculateBounds(int2 windowSize) {
     }
 }
 
-//H3DRes View::Pipeline(){ return _pipeRes; }

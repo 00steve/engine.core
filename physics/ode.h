@@ -5,13 +5,13 @@
 #include <ode/ode.h>
 #include <ode/objects.h>
 
-#include <engine/physics/ode_utils.h>
-#include <engine/core/double3.h>
-#include <engine/graphics/glstructs.h>
-#include <engine/physics/impact.h>
-#include <engine/physics/collision.h>
-#include <engine/physics/physical.h>
-#include <engine/core/float3x3.h>
+#include "../physics/ode_utils.h"
+#include "../core/double3.h"
+#include "../graphics/glstructs.h"
+#include "../physics/impact.h"
+#include "../physics/collision.h"
+#include "../physics/physical.h"
+#include "../core/float3x3.h"
 
 
 

@@ -2,7 +2,7 @@
 #define PHYSICS_GROUP_H
 
 
-#include <engine/core/map.h>
+#include "../core/map.h"
 #include <ode/ode.h>
 
 

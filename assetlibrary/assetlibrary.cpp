@@ -8,7 +8,7 @@ map<void*> AssetLibrary::loadedFiles;
 
 VarMap AssetLibrary::LoadSettings(string fileName){
 	if(loadedFiles.exists(fileName)) {
-		cout << "found existing load of " << fileName << endl;
+		//cout << "found existing load of " << fileName << endl;
 		return *((VarMap*)loadedFiles[fileName]);
 	}
 	return LoadSettingsFile(fileName);
@@ -17,7 +17,7 @@ VarMap AssetLibrary::LoadSettings(string fileName){
 
 string AssetLibrary::LoadString(string fileName){
     if(loadedFiles.exists(fileName)){
-        cout << "found existing load of " << fileName << endl;
+        //cout << "found existing load of " << fileName << endl;
         return *((string*)loadedFiles[fileName]);
     }
     ifstream file(fileName);
@@ -35,7 +35,7 @@ string AssetLibrary::LoadString(string fileName){
 
 VarMap AssetLibrary::LoadSettingsFile(string fileName){
 	fileName = rootDirectory+"settings/"+fileName;
-	cout << "load settings file " << fileName << endl;
+	//cout << "load settings file " << fileName << endl;
 	VarMap newMap;
 	if(!VarMap::Load(fileName,newMap)){
 		cout << "couldn't load settings\n";

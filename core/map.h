@@ -259,13 +259,13 @@ private:
 	}
 
 
-	bool retrieveAllChildren(mapNode<T> *&node,List<T> &all){
+	void retrieveAllChildren(mapNode<T> *&node,List<T> &all){
 	    if(node->leftNode) retrieveAllChildren(node->leftNode,all);
 	    all.Push(node->item);
 	    if(node->rightNode) retrieveAllChildren(node->rightNode,all);
 	}
 
-	bool retrieveAllKeys(mapNode<T> *&node,List<string> &all){
+	void retrieveAllKeys(mapNode<T> *&node,List<string> &all){
 	    if(node->leftNode) retrieveAllKeys(node->leftNode,all);
 	    all.Push(node->key);
 	    if(node->rightNode) retrieveAllKeys(node->rightNode,all);

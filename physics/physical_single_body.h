@@ -1,8 +1,8 @@
 #ifndef SINGLE_BODY_OBJECT_H
 #define SINGLE_BODY_OBJECT_H
 
-#include <engine/physics/physical.h>
-#include <engine/physics/physics_world.h>
+#include "../physics/physical.h"
+#include "../physics/physics_world.h"
 
 
 class PhysicalSingleBody : public Physical{

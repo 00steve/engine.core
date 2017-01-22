@@ -4,9 +4,8 @@
 #include <fstream>
 
 #include <windows.h>
-#include <GL/gl.h>
 #include <GL/glu.h>
-#include <engine/core/double3.h>
+#include "../core/double3.h"
 typedef double3 vertex;
 
 struct rgba{

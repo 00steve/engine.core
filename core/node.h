@@ -2,13 +2,13 @@
 #define ENGINE_NODE_H
 
 #include <iostream>
-#include <engine/core/nodemessage.h>
-#include <engine/core/list.h>
-#include <engine/core/map.h>
-#include <engine/core/varmap.h>
-#include <engine/core/noderequest.h>
-#include <engine/core/timer.h>
-#include <engine/assetlibrary/assetlibrary.h>
+#include "../core/nodemessage.h"
+#include "../core/list.h"
+#include "../core/map.h"
+#include "../core/varmap.h"
+#include "../core/noderequest.h"
+#include "../core/timer.h"
+#include "../assetlibrary/assetlibrary.h"
 
 //using namespace std;
 

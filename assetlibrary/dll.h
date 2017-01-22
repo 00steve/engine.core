@@ -43,9 +43,9 @@ public:
 };
 
 
-template <typename classX> static classX GetDllValue(eDLL* dll,const char* function) {
+template <typename classX> static classX GetDllValue(eDLL* dll,const char* func) {
     typedef classX (*GetClass)();
-    GetClass newClass = (GetClass)::GetProcAddress(dll->Lib(),function);
+    GetClass newClass = (GetClass)::GetProcAddress(dll->Lib(),func);
     classX temp = newClass();
     if(temp) return temp;
     return NULL;

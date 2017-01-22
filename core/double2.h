@@ -21,6 +21,7 @@ class double2 {
 		double2 operator *= (const double &f);
 
         /*simple arithmatic operators*/
+        double2 operator / (const double2 &i);
         double2 operator + (const double2 &i);
         double2 operator - (const double2 &i);
 
