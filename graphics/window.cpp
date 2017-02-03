@@ -3,7 +3,7 @@ void window_size_callback(GLFWwindow* window, int width, int height){
 }
 
 
-void window_close_callback(GLFWwindow* window){
+void window_close_callback(GLFWwindow* window){k
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
